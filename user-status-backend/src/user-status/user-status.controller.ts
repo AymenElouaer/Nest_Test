@@ -1,4 +1,3 @@
-// src/modules/user-status/user-status.controller.ts
 import { Controller, Get, Post, Body } from '@nestjs/common';
 import { UserStatusService } from './user-status.service';
 import { UpdateStatusDto } from './dto/update-status.dto';
