@@ -1,4 +1,3 @@
-// src/app/services/user-status.service.ts
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { io } from 'socket.io-client';
@@ -16,7 +15,7 @@ export class UserStatusService {
         this.socket = io('http://localhost:3000');
 
         this.socket.on('statusUpdated', (statuses) => {
-            const userId = 'user1'; // Assuming userId is 'user1' for demonstration purposes
+            const userId = 'user1';
             if (statuses[userId]) {
                 this.statusSubject.next(statuses[userId]);
             }
