@@ -1,4 +1,3 @@
-// src/modules/user-status/user-status.service.ts
 import { Injectable } from '@nestjs/common';
 import { UserStatus } from './interfaces/user-status.interface';
 
